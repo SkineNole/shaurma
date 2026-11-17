@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#faf8f3">
+<meta name="description" content="Шаурма, закрытая пицца и напитки. Меню, заказ по телефону и адреса на Яндекс Картах.">
+<title>Шаурма — уличная кухня</title>
+<link rel="stylesheet" href="style.css">
+<script src="intro.js" defer></script>
+<script src="site.js" defer></script>
+</head>
+<body>
+<div class="fire-intro" hidden aria-hidden="true"><canvas></canvas></div>
+<a class="skip" href="#main">К содержанию</a>
+<header class="top">
+  <div class="wrap nav">
+    <a class="brand" href="#" aria-label="Шаурма, наверх"><span aria-hidden="true">✦</span> ШАУРМА<span class="dot">.</span></a>
+    <nav aria-label="Основное меню"><a href="#menu">Меню</a><a href="#locations">Где мы</a></nav>
+    <a href="#order" class="button small">Заказать <span aria-hidden="true">↗</span></a>
+  </div>
+</header>
+<main id="main">
+  <section class="wrap hero">
+    <div class="hero-copy">
+      <p class="eyebrow"><span></span> Уличная кухня</p>
+      <h1>Горячая<br><em>шаурма.</em></h1>
+      <p class="intro">Поджаристый лаваш, сочная начинка и любимый соус. А ещё — закрытая пицца и холодные напитки.</p>
+      <div class="actions"><a class="button" href="#menu">Смотреть меню <span aria-hidden="true">↓</span></a><a class="text-link" href="#locations">Как добраться <span aria-hidden="true">↗</span></a></div>
+    </div>
+    <figure class="hero-image">
+      <img src="shawarma.jpg" alt="Поджаренная шаурма в разрезе с мясом и овощами" fetchpriority="high">
+      <div class="stamp" aria-hidden="true"><span>✦</span> С ПЫЛУ<br>С ЖАРУ</div>
+    </figure>
+  </section>
+  <section id="menu" class="wrap section">
+    <div class="section-head reveal">
+      <div><p class="eyebrow"><span></span> Меню</p><h2>Что возьмём?</h2></div>
+      <a class="text-link" href="#order">Заказать по телефону <span aria-hidden="true">↗</span></a>
+    </div>
+    <nav class="menu-nav" aria-label="Разделы меню">
+      <a href="#shawarma">Шаурма ↓</a><a href="#pizza">Закрытая пицца ↓</a><a href="#drinks">Напитки ↓</a>
+    </nav>
+    <div class="menu-grid">
+      <article id="shawarma" class="card menu-card reveal">
+        <div class="photo"><img src="shawarma.jpg" alt="Шаурма в лаваше" loading="lazy"><h3>Шаурма</h3></div>
+        <ul class="price-list">
+          <li><span>Сырная</span><strong>279 ₽</strong></li>
+          <li><span>С курицей</span><strong>259 ₽</strong></li>
+          <li><span>Со свининой</span><strong>289 ₽</strong></li>
+          <li><span>С говядиной</span><strong>329 ₽</strong></li>
+          <li><span>Веганская</span><strong>249 ₽</strong></li>
+        </ul>
+      </article>
+      <article id="pizza" class="card menu-card reveal">
+        <div class="photo"><img src="calzone.jpg" alt="Закрытая пицца с румяной корочкой" loading="lazy"><h3>Закрытая пицца</h3></div>
+        <ul class="price-list">
+          <li><span>Сырная</span><strong>349 ₽</strong></li>
+          <li><span>С курицей</span><strong>369 ₽</strong></li>
+          <li><span>Со свининой</span><strong>389 ₽</strong></li>
+          <li><span>С говядиной</span><strong>429 ₽</strong></li>
+          <li><span>Веганская</span><strong>339 ₽</strong></li>
+        </ul>
+      </article>
+      <article id="drinks" class="card menu-card reveal">
+        <div class="photo cola"><img src="cola.png" alt="Напиток со льдом и лаймом" loading="lazy"><h3>Напитки</h3></div>
+        <ul class="price-list">
+          <li><span>Кола</span><strong>119 ₽</strong></li>
+          <li><span>Лимонад</span><strong>109 ₽</strong></li>
+          <li><span>Вода</span><strong>69 ₽</strong></li>
+        </ul>
+      </article>
+    </div>
+    <p class="photo-note">Фото и цены для примера.</p>
+  </section>
+  <section id="locations" class="locations section">
+    <div class="wrap">
+      <div class="section-head reveal"><div><p class="eyebrow"><span></span> Яндекс Карты</p><h2>Где нас найти</h2></div><p class="map-note" id="map-note">Тестовые карты. Адреса заведений появятся здесь.</p></div>
+      <div class="map-grid">
+        <article class="map-card reveal"><div class="map-head"><h3>Москва</h3><a href="https://yandex.com/maps/-/CXSvNTli" target="_blank" rel="noopener">Открыть карту ↗</a></div>
+          <iframe title="Яндекс Карты — Москва" src="https://yandex.ru/map-widget/v1/?ll=37.617700%2C55.755864&amp;z=11" loading="lazy"></iframe>
+        </article>
+        <article class="map-card reveal"><div class="map-head"><h3>Минск</h3><a href="https://yandex.com/maps/-/CXSvR6lu" target="_blank" rel="noopener">Открыть карту ↗</a></div>
+          <iframe title="Яндекс Карты — Минск" src="https://yandex.ru/map-widget/v1/?ll=27.561481%2C53.902284&amp;z=11" loading="lazy"></iframe>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section id="order" class="wrap order-wrap section">
+    <div class="order reveal"><div><p class="eyebrow"><span></span> Заказ по телефону</p><h2>Будете шаурму?</h2><p>Позвоните, чтобы уточнить меню и оформить заказ.</p></div>
+      <div class="order-contact" id="order-contact"><strong>+7 (___) ___-__-__</strong><span>Номер для заказа появится здесь</span></div>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="wrap footer-top">
+    <a class="brand" href="#" aria-label="Шаурма, наверх"><span aria-hidden="true">✦</span> ШАУРМА<span class="dot">.</span></a>
+    <div class="socials" role="group" aria-label="Социальные сети">
+      <button type="button" data-social="telegram" aria-label="Telegram" title="Telegram"><img src="telegram.svg" alt="" width="22" height="22"></button>
+      <button type="button" data-social="max" aria-label="MAX" title="MAX"><img src="max.png" alt="" width="22" height="22"></button>
+      <button type="button" data-social="vk" aria-label="ВКонтакте" title="ВКонтакте"><img src="vk.svg" alt="" width="22" height="22"></button>
+      <button type="button" data-social="whatsapp" aria-label="WhatsApp" title="WhatsApp"><img src="whatsapp.svg" alt="" width="22" height="22"></button>
+    </div>
+  </div>
+  <div class="wrap footer-bottom"><p>© 2026 Шаурма. Все данные защищены.</p><a class="text-link" href="#">Наверх ↑</a></div>
+</footer>
+<dialog id="social-dialog" aria-labelledby="social-title">
+  <h2 id="social-title"></h2>
+  <p>Ссылка на наш профиль появится здесь.</p>
+  <form method="dialog"><button class="button small" type="submit">Закрыть</button></form>
+</dialog>
+</body>
+</html>
+
+
+
